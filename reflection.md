@@ -5,6 +5,7 @@ Use this file to record your reflection on this assignment.
 2. Raley Long
 3. Dakota Law
 4. Alysa Juarez
+5. Brunella Tipismana
 
 - Which session(s) of TA / office hours did you attend?
 1. Sunday 2/12/23 from 1-3pm

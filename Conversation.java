@@ -6,6 +6,7 @@
 // Third attempt: Make it respond to the actual responses of the user's input
 
 import java.util.Scanner;
+
 import java.util.*;
 
 class Conversation {
@@ -50,9 +51,11 @@ class Conversation {
     } 
     // inputQ1.close();
 
-    public static void mirror(String oldWord) {
+    // instead of void, return replacement word 
+    public static String mirror(String oldWord) {
       String newWord = oldWord.replace("I", "you");
       System.out.println(newWord);
+      return newWord;
       // System.out.println(oldWord.replace("I", "you"));
       // System.out.println(oldWord.replace("me", "you"));
       // System.out.println(oldWord.replace("am", "are"));
@@ -62,3 +65,13 @@ class Conversation {
 
   }
 }
+/*  1. Ask for number of rounds
+* 2. Print a greeting
+* 3. for int i = 0, i < # rounds, i++ {
+ * 3a. get next input from User
+  * 3b. bot responds
+* }
+* 4. Print goodbye
+* 5. Print transcipt
+*/
+
