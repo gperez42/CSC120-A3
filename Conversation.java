@@ -9,8 +9,13 @@ import java.util.Scanner;
 
 import java.util.*;
 
+/*
+ * Sets up Conversation class
+ */
+
 class Conversation {
   
+  /* Constructor */
   public static void main(String[] arguments) {
     String[] array = {"Great!", "Fascinating!", "Wow!", "That's so interesting.", "I'd love to talk more about that!"};
     boolean go = true; 
@@ -42,20 +47,47 @@ class Conversation {
       String talkTopicRand = inputQ2.next();
       int randNum = (int)(Math.random()*5);
       System.out.println(array[randNum]);
-      // if user uses a mirror word, return a response with the new word
-// call mirror here
-      // return mirror();
-    }
+
+      String[] mirror = new String[] {};
+      String[] divided = talkTopic.split("||s+"); // splits words by spaces
+      ArrayList<String> output = new ArrayList<> ();
+      for (int x = 0; x < mirror.length; x++); { // i++ is i=i+1 
+        if (divided[x] == "I") {
+         output.add("you");
+        }
+        if (divided[x] == "me") {
+          output.add("you");
+        }
+        if (divided[x] == "am") {
+          output.add("are");
+        }
+        if (divided[x] == "you") {
+          output.add("I");
+        }
+        if (divided[x] == "my") {
+          output.add("your");
+        }
+        if (divided[x] == "your") {
+          output.add("my");
+        }
+        else {
+          // add new word inside original list
+          mirror[x] = talkTopic;
+          output.add(mirror);
+        }
+      }
     go = false;
     System.out.println("Thanks for chatting with me, have a nice day!");
-    } 
-    // inputQ1.close();
+    System.out.print("TRANSCRIPT: " + "How many rounds of conversation would you like to have?" + "Hi User! What would you like to talk about?" + output + "Thanks for chatting with me, have a nice day!");    
+  } 
 
     // instead of void, return replacement word 
-    public static String mirror(String oldWord) {
-      String newWord = oldWord.replace("I", "you");
-      System.out.println(newWord);
-      return newWord;
+    // public static String mirror(String oldWord) {
+    //   // String newWord = oldWord.replace("I", "you");
+    //   String newWord = oldWord.replace("I", "you");
+    //   System.out.println(newWord);
+    //   return newWord;
+
       // System.out.println(oldWord.replace("I", "you"));
       // System.out.println(oldWord.replace("me", "you"));
       // System.out.println(oldWord.replace("am", "are"));
@@ -64,14 +96,6 @@ class Conversation {
       // System.out.(oldWord.replace("your", "my"));
 
   }
+
 }
-/*  1. Ask for number of rounds
-* 2. Print a greeting
-* 3. for int i = 0, i < # rounds, i++ {
- * 3a. get next input from User
-  * 3b. bot responds
-* }
-* 4. Print goodbye
-* 5. Print transcipt
-*/
 
