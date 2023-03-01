@@ -11,5 +11,6 @@ Changes made to original submission in Conversation.java:
 - Prints transcript to console
 - Program runs without errors
 - Program executes fully
+- I think it handles Idaho -> youdaho problem
 
 Also, rubric.md file is updated.

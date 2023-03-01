@@ -26,15 +26,15 @@ YES 1 pt: Uses a canned response when no mirror words detected
 
 YES 1 pt: Detects the requested set of mirror words (at minimum)
 
-PART 1 pt: Replaces simple mirror words appropriately (unpunctuated, lowercase)
+YES 1 pt: Replaces simple mirror words appropriately (unpunctuated, lowercase)
 
 ### Level 3 (3 pts)
 
-PART 1 pt: Makes all appropriate mirror replacements
+YES 1 pt: Makes all appropriate mirror replacements
 
-PART 1 pt: Stores transcript of the conversation in an array
+YES 1 pt: Stores transcript of the conversation in an array
 
-NO 1 pt: Prints transcript when terminating
+YES 1 pt: Prints transcript when terminating
 
 ## Kudos:
 
@@ -42,15 +42,14 @@ NO (Kudos!) Handles mirror words with punctuation
 
 YES (Kudos!) Generates output with correct punctuation & capitalization
 
-PART (Kudos!) Handles you --> me/I dilemma
-
+YES (Kudos!) Handles you --> me/I dilemma
 
 
 ## General Items:
 
-PART 4 pts: Programs compile without errors or warnings
+YES 4 pts: Programs compile without errors or warnings
 
-PART 2 pts: Executes fully & consistently without crashing (exception/freeze)
+YES 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 YES 2 pt: Complies with style guidelines (missing items 1 pt each):
 
