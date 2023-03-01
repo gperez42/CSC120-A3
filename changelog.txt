@@ -1,0 +1,15 @@
+Additional hours attended for re-submission: 
+1. Office hours - Friday 2/24/23 from 10:50am-12pm
+2. TA Hours - Tuesday 2/28/23 from 7-9pm
+
+Changes made to original submission in Conversation.java: 
+- Detects mirror words
+- Program stores appropriate mirror words + other words inputted
+- Program replaces detected mirror words
+- Program uses canned responses when no mirror words are detected in input
+- Program stores transcript of conversation in an array
+- Prints transcript to console
+- Program runs without errors
+- Program executes fully
+
+Also, rubric.md file is updated.
